@@ -1,0 +1,70 @@
+.container{
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 30px; */
+}
+.card{
+    position: relative;
+    background: #fff;
+    max-width: 300px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img-top{
+    max-height: 200px;
+}
+.card-img-top img{
+    max-width: 100%;
+    height: auto;
+}
+.layer3 .pagination{
+    text-align: center;
+    user-select: none;
+}
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+.pagination li a{
+    color: #1f0303;
+    text-decoration: none;
+    line-height: 45px;
+}
+.prev-page, .next-page{
+    background: #0AB1CE;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.prev-page:hover{
+    transform: translateX(-5px);
+}
+.next-page:hover{
+    transform: translateX(5px);
+}
+.current-page, .dots{
+    background: #ccc;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active{
+    background: #0AB1CE;
+}
+.disable{
+    background: #ccc;
+}

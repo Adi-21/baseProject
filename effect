@@ -1,0 +1,52 @@
+css//
+.img-area{
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.img-area img{
+    width: 80%;
+    height: auto;
+}
+.img-text,
+.img-area:after{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.img-area{
+    content: '';
+    height: 100%;
+    top: 0;
+    transition: .5s;
+}
+.img-area:hover:after{
+    background: linear-gradient(to bottom, rgba(199,0,57,.01) 0, rgba(199,0,57,.25) 25%, rgba(199,0,57,.75) 75%, rgba(199,0,57,.95) 100%);
+}
+.img-text{
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(145px);
+    transition: all .5s cubic-bezier(.13, .62, .81, .91) 0s;
+}
+.img-text{
+    font-family: big john;
+}
+.img-area:hover .img-text{
+    transform: translateY(0);
+}
+
+//html
+<div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="img-area">
+                    <img src="https://images.unsplash.com/photo-1624030275207-77bac1c83be3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a3Jpc2huYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <div class="img-text">
+                        <h3 class="h3">Aditya Singh</h3>
+                        <h5 class="h5">Web Developer</h5>
+                    </div>
+                </div>
+            </div>
+</div>
